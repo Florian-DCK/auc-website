@@ -21,11 +21,13 @@ const newAmsterdam = New_Amsterdam({
 
 const staatliches = Staatliches({
 	variable: '--font-staatliches',
+	subsets: ['latin'],
 	weight: '400',
 });
 
 const robotoCondensed = Roboto_Condensed({
 	variable: '--font-robotoCondensed',
+	subsets: ['latin'],
 	weight: '400',
 });
 

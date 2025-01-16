@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
-import { Bowlby_One, New_Amsterdam, Staatliches } from 'next/font/google';
+import {
+	Bowlby_One,
+	New_Amsterdam,
+	Staatliches,
+	Roboto_Condensed,
+} from 'next/font/google';
 import './globals.css';
 
 const Bowlby = Bowlby_One({
@@ -19,6 +24,11 @@ const staatliches = Staatliches({
 	weight: '400',
 });
 
+const robotoCondensed = Roboto_Condensed({
+	variable: '--font-robotoCondensed',
+	weight: '400',
+});
+
 export const metadata: Metadata = {
 	title: 'Adopte un cube',
 	description: 'Site vitrine de la communauté Adopte un cube',
@@ -32,7 +42,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${newAmsterdam.variable} ${Bowlby.variable} ${staatliches.variable} antialiased`}>
+				className={`${newAmsterdam.variable} ${Bowlby.variable} ${staatliches.variable} ${robotoCondensed.variable} antialiased`}>
 				{children}
 			</body>
 		</html>

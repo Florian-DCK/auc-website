@@ -25,7 +25,7 @@ export default function GamesCaroussel() {
 							<Image
 								src={minecraft}
 								alt="Minecraft"
-								className="h-24 rounded-lg"
+								className="h-24 rounded-b-lg"
 							/>
 						</div>
 					</CarouselItem>
@@ -34,7 +34,11 @@ export default function GamesCaroussel() {
 							<h3 className="staatliches text-secondary self-center">
 								Among Us
 							</h3>
-							<Image src={amongUs} alt="Among Us" className="h-24 rounded-lg" />
+							<Image
+								src={amongUs}
+								alt="Among Us"
+								className="h-24 rounded-b-lg"
+							/>
 						</div>
 					</CarouselItem>
 					<CarouselItem className="basis-1/2 drop-shadow-lg">
@@ -45,7 +49,7 @@ export default function GamesCaroussel() {
 							<Image
 								src={lethal}
 								alt="Lethal Company"
-								className="h-24 rounded-lg"
+								className="h-24 rounded-b-lg"
 							/>
 						</div>
 					</CarouselItem>
@@ -57,7 +61,7 @@ export default function GamesCaroussel() {
 							<Image
 								src={paradox}
 								alt="Paradox Games"
-								className="h-24 rounded-lg"
+								className="h-24 rounded-b-lg"
 							/>
 						</div>
 					</CarouselItem>

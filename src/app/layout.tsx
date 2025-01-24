@@ -6,6 +6,8 @@ import {
 	Roboto_Condensed,
 } from 'next/font/google';
 import './globals.css';
+import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 const Bowlby = Bowlby_One({
 	variable: '--font-bowlby',
@@ -44,8 +46,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${newAmsterdam.variable} ${Bowlby.variable} ${staatliches.variable} ${robotoCondensed.variable} antialiased`}>
+				className={`${newAmsterdam.variable} ${Bowlby.variable} ${staatliches.variable} ${robotoCondensed.variable} antialiased overflow-hidden`}>
+				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

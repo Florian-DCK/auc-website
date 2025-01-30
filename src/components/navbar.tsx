@@ -1,9 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import AUCico from '../../public/AUCico.png';
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuLabel,
+	DropdownMenuSeparator,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
 export default function Navbar() {
 	return (
-		<div>
+		<div className=" ">
 			<nav className="flex bg-transparent drop-shadow-lg relative overflow-x-hidden h-fit mb-5">
 				{/* fond de la navbar */}
 				<svg
@@ -83,32 +92,44 @@ export default function Navbar() {
 							<a href="https://auc2.buycraft.net/">Donations</a>
 						</li>
 						<li>
-							{/* Menu hamburger */}
-							<svg
-								width="30px"
-								height="30px"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M4 7L7 7M20 7L11 7"
-									stroke="#9b8d7a"
-									strokeWidth="1.5"
-									strokeLinecap="round"
-								/>
-								<path
-									d="M20 17H17M4 17L13 17"
-									stroke="#9b8d7a"
-									strokeWidth="1.5"
-									strokeLinecap="round"
-								/>
-								<path
-									d="M4 12H7L20 12"
-									stroke="#9b8d7a"
-									strokeWidth="1.5"
-									strokeLinecap="round"
-								/>
-							</svg>
+							<DropdownMenu>
+								<DropdownMenuTrigger>
+									{' '}
+									<svg
+										width="30px"
+										height="30px"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4 7L7 7M20 7L11 7"
+											stroke="#9b8d7a"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+										/>
+										<path
+											d="M20 17H17M4 17L13 17"
+											stroke="#9b8d7a"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+										/>
+										<path
+											d="M4 12H7L20 12"
+											stroke="#9b8d7a"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+										/>
+									</svg>
+								</DropdownMenuTrigger>
+								<DropdownMenuContent>
+									<DropdownMenuLabel>My Account</DropdownMenuLabel>
+									<DropdownMenuSeparator />
+									<DropdownMenuItem>Profile</DropdownMenuItem>
+									<DropdownMenuItem>Billing</DropdownMenuItem>
+									<DropdownMenuItem>Team</DropdownMenuItem>
+									<DropdownMenuItem>Subscription</DropdownMenuItem>
+								</DropdownMenuContent>
+							</DropdownMenu>
 						</li>
 					</ul>
 				</div>

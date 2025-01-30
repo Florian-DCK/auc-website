@@ -3,7 +3,7 @@ import GamesCaroussel from '@/components/gamesCaroussel';
 
 export default function Home() {
 	return (
-		<div className=" w-screen">
+		<div className=" w-screen ">
 			<div className="flex flex-row justify-around px-32 gap-20">
 				<section className="w-1/2 space-y-32">
 					<section className=" border-l-4 rounded ps-3 border-[#242B33]">

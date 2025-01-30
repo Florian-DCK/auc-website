@@ -8,7 +8,9 @@ export default function Home() {
 	const clipIp = () => {
 		navigator.clipboard.writeText('mc.adopteuncube.com').then(() => {
 			const ipText = document.querySelector('.Ip');
-			ipText.textContent = 'IP copiée !';
+			if (ipText) {
+				ipText.textContent = 'IP copiée !';
+			}
 		});
 	};
 

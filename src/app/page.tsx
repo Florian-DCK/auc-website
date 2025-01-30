@@ -3,14 +3,16 @@ import GamesCaroussel from '@/components/gamesCaroussel';
 
 export default function Home() {
 	return (
-		<div className=" w-screen ">
-			<div className="flex flex-row justify-around px-32 gap-20">
-				<section className="w-1/2 space-y-32">
-					<section className=" border-l-4 rounded ps-3 border-[#242B33]">
-						<h1 className="bowlby text-2xl">REJOINS LA COMMUNAUTE !</h1>
-						<p className="robotoCondensed text-pretty text-lg ">
+		<div className=" w-screen -mt-16 lg:mt-0">
+			<div className="flex flex-col-reverse lg:flex-row justify-around lg:px-32 lg:gap-20">
+				<section className="lg:w-1/2 space-y-10 lg:space-y-32 ">
+					<section className=" lg:border-l-4 rounded px-3 border-[#242B33]">
+						<h1 className="bowlby text-xl lg:text-2xl">
+							REJOINS LA COMMUNAUTE !
+						</h1>
+						<p className="robotoCondensed text-pretty text-base lg:text-lg ">
 							Viens découvrir notre communauté multigaming mature et conviviale
-							sur Discord !Rejoins-nous dès maintenant pour participer à nos
+							sur Discord ! Rejoins-nous dès maintenant pour participer à nos
 							aventures et partager ta passion du jeu avec nous !
 						</p>
 						<div className="flex space-x-3">
@@ -65,9 +67,21 @@ export default function Home() {
 							</button>
 						</div>
 					</section>
-					<section className="border-l-4 rounded ps-3 border-[#242B33]">
-						<h1 className="bowlby text-2xl">QUI SOMMES NOUS ?</h1>
-						<p className="robotoCondensed text-lg">
+					<section className="lg:w-1/2 lg:hidden flex-col space-y-5 justify-center items-center flex">
+						<iframe
+							className="w-[265px] h-[150px] lg:w-[531px] lg:h-[300px] rounded-lg lg:rounded-3xl"
+							src="https://www.youtube.com/embed/bk6_hS23DrU?si=Y5j3gw0Xj5DkbGlP&amp;controls=0&amp;rel=0&amp;showinfo=0"
+							title="AUC Trailer S10"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+							referrerPolicy="strict-origin-when-cross-origin"
+							allowFullScreen
+							loading="lazy"></iframe>
+						<h2 className="bowlby text-xl">CERTAINS DE NOS JEUX :</h2>
+						<GamesCaroussel />
+					</section>
+					<section className="lg:border-l-4 rounded px-3 border-[#242B33]">
+						<h1 className="bowlby text-xl lg:text-2xl">QUI SOMMES NOUS ?</h1>
+						<p className="robotoCondensed text-base lg:text-lg">
 							Nous sommes une petite communauté existant depuis 2014 sous le nom
 							d’Adopte Un Cube. Initialement centrée sur Minecraft, notre
 							communauté évolue désormais vers une expérience multigaming sur
@@ -83,9 +97,9 @@ export default function Home() {
 						</p>
 					</section>
 				</section>
-				<section className="w-1/2 flex flex-col space-y-5 justify-center items-center">
+				<section className="lg:w-1/2 lg:flex flex-col space-y-5 justify-center items-center hidden">
 					<iframe
-						className="w-[531px] h-[300px] rounded-3xl"
+						className="w-[265px] h-[150px] lg:w-[531px] lg:h-[300px] rounded-3xl"
 						src="https://www.youtube.com/embed/bk6_hS23DrU?si=Y5j3gw0Xj5DkbGlP&amp;controls=0&amp;rel=0&amp;showinfo=0"
 						title="AUC Trailer S10"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"

@@ -17,7 +17,7 @@ export default function GamesCaroussel() {
 		<div className=" self-center w-1/2">
 			<Carousel className="" opts={{ loop: true, align: 'center' }}>
 				<CarouselContent>
-					<CarouselItem className="basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Minecraft
@@ -29,7 +29,7 @@ export default function GamesCaroussel() {
 							/>
 						</div>
 					</CarouselItem>
-					<CarouselItem className="basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Among Us
@@ -41,7 +41,7 @@ export default function GamesCaroussel() {
 							/>
 						</div>
 					</CarouselItem>
-					<CarouselItem className="basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Lethal Company
@@ -53,7 +53,7 @@ export default function GamesCaroussel() {
 							/>
 						</div>
 					</CarouselItem>
-					<CarouselItem className="basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Jeux Paradox

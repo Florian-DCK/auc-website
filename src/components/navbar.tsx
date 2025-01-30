@@ -15,11 +15,11 @@ import {
 export default function Navbar() {
 	return (
 		<div className=" ">
-			<nav className="flex bg-transparent drop-shadow-lg relative overflow-x-hidden h-fit mb-5">
+			<nav className="flex bg-transparent drop-shadow-lg relative overflow-x-hidden h-[160px] mb-5">
 				{/* fond de la navbar */}
 
 				<svg
-					className="absolute top-0 left-0 overflow-x-hidden w-auto"
+					className="absolute top-0 -left-[300px] lg:left-0 overflow-x-hidden w-auto"
 					width="4041"
 					height="160"
 					viewBox="1140 0 4041 250"
@@ -77,32 +77,32 @@ export default function Navbar() {
 					</defs>
 				</svg>
 				{/* Logo AUC */}
-				<Link href={'/'} className="z-10">
+				<Link href={'/'} className="z-10 hidden lg:block">
 					<Image
 						width={120}
 						height={120}
 						src={AUCico}
 						alt="auc logo"
-						className="m-4 z-10"></Image>
+						className="m-4 z-10 hidden lg:block"></Image>
 				</Link>
-				<div className="flex flex-row justify-between w-full h-fit z-10 items-center ps-44">
+				<div className="flex flex-row justify-between w-full h-fit z-10 items-center lg:ps-44">
 					<Link href={'/'}>
-						<h1 className="staatliches text-secondary text-6xl">
+						<h1 className="staatliches text-secondary text-3xl lg:text-6xl ps-3">
 							ADOPTE UN CUBE
 						</h1>
 					</Link>
-					<ul className="staatliches text-2xl flex space-x-4 text-secondary mx-5 ">
-						<li className="hover:text-white transition-colors">
+					<ul className="staatliches text-2xl flex space-x-4 text-secondary mx-5 mt-5 lg:mt-0">
+						<li className="hover:text-white transition-colors hidden lg:block">
 							<a href="https://discord.gg/kMKqpaP" target="_blank">
 								Discord
 							</a>
 						</li>
-						<li className="hover:text-white transition-colors">
+						<li className="hover:text-white transition-colors hidden lg:block">
 							<a href="https://auc2.buycraft.net/" target="_blank">
 								Donations
 							</a>
 						</li>
-						<li className="">
+						<li className=" -mt-2 lg:mt-0">
 							<DropdownMenu>
 								<DropdownMenuTrigger>
 									{' '}
@@ -132,6 +132,13 @@ export default function Navbar() {
 								</DropdownMenuTrigger>
 								<DropdownMenuContent>
 									<DropdownMenuGroup>
+										<DropdownMenuItem className="block lg:hidden">
+											<Link href={'https://auc2.buycraft.net/'}>Discord</Link>
+										</DropdownMenuItem>
+										<DropdownMenuItem className="block lg:hidden">
+											<Link href={'https://'}>Donations</Link>
+										</DropdownMenuItem>
+										<DropdownMenuSeparator></DropdownMenuSeparator>
 										<DropdownMenuLabel>Minecraft</DropdownMenuLabel>
 										<DropdownMenuSeparator />
 										<DropdownMenuItem>

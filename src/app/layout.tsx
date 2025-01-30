@@ -46,7 +46,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${newAmsterdam.variable} ${Bowlby.variable} ${staatliches.variable} ${robotoCondensed.variable} antialiased overflow-hidden relative h-screen w-screen`}>
+				className={`${newAmsterdam.variable} ${Bowlby.variable} ${staatliches.variable} ${robotoCondensed.variable} antialiased lg:overflow-hidden relative h-screen w-screen`}>
 				<Navbar />
 				{children}
 				<Footer />

@@ -92,15 +92,15 @@ export default function Navbar() {
 						</h1>
 					</Link>
 					<ul className="staatliches text-2xl flex space-x-4 text-secondary mx-5 mt-5 lg:mt-0">
-						<li className="hover:text-white transition-colors hidden lg:block">
-							<a href="https://discord.gg/kMKqpaP" target="_blank">
+						<li className="lg:hover:text-white transition-colors hidden lg:block">
+							<Link href="https://discord.gg/kMKqpaP" target="_blank">
 								Discord
-							</a>
+							</Link>
 						</li>
-						<li className="hover:text-white transition-colors hidden lg:block">
-							<a href="https://auc2.buycraft.net/" target="_blank">
+						<li className="lg:hover:text-white transition-colors hidden lg:block">
+							<Link href="https://auc2.buycraft.net/" target="_blank">
 								Donations
-							</a>
+							</Link>
 						</li>
 						<li className=" -mt-2 lg:mt-0">
 							<DropdownMenu>
@@ -133,10 +133,10 @@ export default function Navbar() {
 								<DropdownMenuContent>
 									<DropdownMenuGroup>
 										<DropdownMenuItem className="block lg:hidden">
-											<Link href={'https://auc2.buycraft.net/'}>Discord</Link>
+											<Link href={'https://discord.gg/kMKqpaP'}>Discord</Link>
 										</DropdownMenuItem>
 										<DropdownMenuItem className="block lg:hidden">
-											<Link href={'https://'}>Donations</Link>
+											<Link href={'https://auc2.buycraft.net/'}>Donations</Link>
 										</DropdownMenuItem>
 										<DropdownMenuSeparator></DropdownMenuSeparator>
 										<DropdownMenuLabel>Minecraft</DropdownMenuLabel>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import AUCico from '../../public/AUCico.png';
+import Link from 'next/link';
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -8,6 +9,7 @@ import {
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
+	DropdownMenuGroup,
 } from '@/components/ui/dropdown-menu';
 
 export default function Navbar() {
@@ -15,6 +17,7 @@ export default function Navbar() {
 		<div className=" ">
 			<nav className="flex bg-transparent drop-shadow-lg relative overflow-x-hidden h-fit mb-5">
 				{/* fond de la navbar */}
+
 				<svg
 					className="absolute top-0 left-0 overflow-x-hidden w-auto"
 					width="4041"
@@ -74,60 +77,71 @@ export default function Navbar() {
 					</defs>
 				</svg>
 				{/* Logo AUC */}
-				<Image
-					width={120}
-					height={120}
-					src={AUCico}
-					alt="auc logo"
-					className="m-4 z-10"></Image>
+				<Link href={'/'} className="z-10">
+					<Image
+						width={120}
+						height={120}
+						src={AUCico}
+						alt="auc logo"
+						className="m-4 z-10"></Image>
+				</Link>
 				<div className="flex flex-row justify-between w-full h-fit z-10 items-center ps-44">
-					<h1 className="staatliches text-secondary text-6xl">
-						ADOPTE UN CUBE
-					</h1>
+					<Link href={'/'}>
+						<h1 className="staatliches text-secondary text-6xl">
+							ADOPTE UN CUBE
+						</h1>
+					</Link>
 					<ul className="staatliches text-2xl flex space-x-4 text-secondary mx-5 ">
-						<li>
-							<a href="https://discord.gg/kMKqpaP">Discord</a>
+						<li className="hover:text-white transition-colors">
+							<a href="https://discord.gg/kMKqpaP" target="_blank">
+								Discord
+							</a>
 						</li>
-						<li>
-							<a href="https://auc2.buycraft.net/">Donations</a>
+						<li className="hover:text-white transition-colors">
+							<a href="https://auc2.buycraft.net/" target="_blank">
+								Donations
+							</a>
 						</li>
-						<li>
+						<li className="">
 							<DropdownMenu>
 								<DropdownMenuTrigger>
 									{' '}
 									<svg
 										width="30px"
 										height="30px"
+										className="stroke-secondary hover:stroke-white transition-colors"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M4 7L7 7M20 7L11 7"
-											stroke="#9b8d7a"
 											strokeWidth="1.5"
 											strokeLinecap="round"
 										/>
 										<path
 											d="M20 17H17M4 17L13 17"
-											stroke="#9b8d7a"
 											strokeWidth="1.5"
 											strokeLinecap="round"
 										/>
 										<path
 											d="M4 12H7L20 12"
-											stroke="#9b8d7a"
 											strokeWidth="1.5"
 											strokeLinecap="round"
 										/>
 									</svg>
 								</DropdownMenuTrigger>
 								<DropdownMenuContent>
-									<DropdownMenuLabel>My Account</DropdownMenuLabel>
-									<DropdownMenuSeparator />
-									<DropdownMenuItem>Profile</DropdownMenuItem>
-									<DropdownMenuItem>Billing</DropdownMenuItem>
-									<DropdownMenuItem>Team</DropdownMenuItem>
-									<DropdownMenuItem>Subscription</DropdownMenuItem>
+									<DropdownMenuGroup>
+										<DropdownMenuLabel>Minecraft</DropdownMenuLabel>
+										<DropdownMenuSeparator />
+										<DropdownMenuItem>
+											<Link href="http://dynmap.adopteuncube.com/">Dynmap</Link>
+										</DropdownMenuItem>
+										<DropdownMenuItem>
+											<Link href="/voter">Voter</Link>
+										</DropdownMenuItem>
+										<DropdownMenuItem>Ancienne map</DropdownMenuItem>
+									</DropdownMenuGroup>
 								</DropdownMenuContent>
 							</DropdownMenu>
 						</li>

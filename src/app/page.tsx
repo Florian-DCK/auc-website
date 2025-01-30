@@ -14,7 +14,7 @@ export default function Home() {
 							aventures et partager ta passion du jeu avec nous !
 						</p>
 						<div className="flex space-x-3">
-							<button className="bg-[#5865F2] flex items-center gap-2 px-2 rounded mt-2">
+							<button className="bg-[#5865F2] flex items-center gap-2 px-2 rounded mt-2 hover:opacity-80 hover:scale-105">
 								{/* Logo Discord */}
 								<svg
 									width="20px"
@@ -32,7 +32,7 @@ export default function Home() {
 								</svg>
 								<p className="robotoCondensed">Discord</p>
 							</button>
-							<button className="bg-[#D93444] flex items-center gap-2 px-2 py-1 rounded mt-2">
+							<button className="bg-[#D93444] flex items-center gap-2 px-2 py-1 rounded mt-2 hover:opacity-80 hover:scale-105">
 								{/* Logo Minecraft */}
 								<svg
 									width="20px"

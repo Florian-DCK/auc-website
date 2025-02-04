@@ -60,7 +60,7 @@ const voter = () => {
 					</Link>
 				</section>
 			</section>
-			<section className="lg:w-1/2 lg:flex flex-col space-y-5 justify-center">
+			<section className="lg:w-1/2 lg:flex flex-col space-y-5 ">
 				<div>
 					<h2 className="bowlby text-xl lg:text-2xl">
 						Les sites sur lesquels voter :
@@ -69,9 +69,8 @@ const voter = () => {
 						N'oubliez pas de préciser votre pseudo lorsqu'on vous le demande !
 					</h2>
 				</div>
-				<ul className="flex flex-col space-y-5">
+				<ul className="flex flex-col space-y-5 items-start w-fit self-start">
 					<li className="flex space-x-5 items-center">
-						<h2 className="staatliches self-center text-xl">Top serveur</h2>{' '}
 						<Link
 							href="https://minecraft.top-serveurs.net/vote/adopte-un-cube"
 							target="_blank"
@@ -91,11 +90,9 @@ const voter = () => {
 								<p className="robotoCondensed">Voter !</p>
 							</button>
 						</Link>
+						<h2 className="staatliches self-center text-xl">Top serveur</h2>{' '}
 					</li>
 					<li className="flex space-x-5 items-center">
-						<h2 className="staatliches self-center text-xl">
-							Serveur Minecraft
-						</h2>{' '}
 						<Link
 							href="https://www.serveurs-minecraft.org/vote.php?id=34068"
 							target="_blank"
@@ -115,9 +112,11 @@ const voter = () => {
 								<p className="robotoCondensed">Voter !</p>
 							</button>
 						</Link>
+						<h2 className="staatliches self-center text-xl">
+							Serveur Minecraft
+						</h2>
 					</li>
 					<li className="flex space-x-5 items-center">
-						<h2 className="staatliches self-center text-xl">Serveur Privé</h2>{' '}
 						<Link
 							href="https://serveur-prive.net/minecraft/adopte-un-cube-1891/vote"
 							target="_blank"
@@ -137,11 +136,9 @@ const voter = () => {
 								<p className="robotoCondensed">Voter !</p>
 							</button>
 						</Link>
+						<h2 className="staatliches self-center text-xl">Serveur Privé</h2>{' '}
 					</li>
 					<li className="flex space-x-5 items-center">
-						<h2 className="staatliches self-center text-xl">
-							Liste serveurs minecraft
-						</h2>{' '}
 						<Link
 							href="https://www.liste-serveurs-minecraft.org/?post_type=listing_type&p=197530"
 							target="_blank"
@@ -161,6 +158,9 @@ const voter = () => {
 								<p className="robotoCondensed">Voter !</p>
 							</button>
 						</Link>
+						<h2 className="staatliches self-center text-xl">
+							Liste serveurs minecraft
+						</h2>
 					</li>
 				</ul>
 			</section>

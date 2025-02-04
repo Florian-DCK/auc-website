@@ -25,10 +25,10 @@ const voter = () => {
 						Les chocos sont utiles en jeu pour : <br />
 					</p>
 					<ul className="ms-5 list-disc">
-						<li>Se procurer des têtes</li>
+						<li>Se procurer des têtes décoratives !</li>
 						<li>
-							décoratives ! Acheter des “lootboxes” contenant le loot d’un
-							coffre de structure au choix !
+							Acheter des “lootboxes” contenant le loot d’un coffre de structure
+							au choix !
 						</li>
 					</ul>
 				</section>

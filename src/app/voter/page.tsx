@@ -24,7 +24,7 @@ const voter = () => {
 						sites au moins une fois par jour ! <br /> <br />
 						Les chocos sont utiles en jeu pour : <br />
 					</p>
-					<ul className="ms-5 list-disc">
+					<ul className="robotoCondensed ms-5 list-disc">
 						<li>Se procurer des têtes décoratives !</li>
 						<li>
 							Acheter des “lootboxes” contenant le loot d’un coffre de structure

@@ -147,7 +147,15 @@ export default function Navbar() {
 										<DropdownMenuItem>
 											<Link href="/voter">Voter</Link>
 										</DropdownMenuItem>
-										<DropdownMenuItem>Ancienne map</DropdownMenuItem>
+										<DropdownMenuItem>
+											<Link
+												href={
+													'https://mega.nz/folder/ATFw2boA#Twh491rbOdU2pE-_Y4WalQ'
+												}
+												target="_blank">
+												Ancienne map
+											</Link>
+										</DropdownMenuItem>
 									</DropdownMenuGroup>
 								</DropdownMenuContent>
 							</DropdownMenu>

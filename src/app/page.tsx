@@ -17,7 +17,7 @@ export default function Home() {
 	return (
 		<div className=" w-screen -mt-16 lg:mt-0">
 			<div className="flex flex-col-reverse lg:flex-row justify-around lg:px-32 lg:gap-20">
-				<section className="lg:w-1/2 space-y-10 lg:space-y-24 ">
+				<section className="lg:w-1/2 space-y-10 lg:space-y-auto">
 					<section className=" lg:border-l-4 rounded px-3 border-[#242B33]">
 						<h1 className="bowlby text-xl lg:text-2xl">
 							REJOINS LA COMMUNAUTE !
@@ -113,7 +113,7 @@ export default function Home() {
 							unique à notre survie ! Rejoignez-nous pour partager votre passion
 							des jeux vidéo dans un cadre convivial et diversifié
 						</p>
-						<ul className="flex space-x-5">
+						<ul className="flex space-x-5 mb-10 lg:mb-0">
 							<li>
 								<Link href={'https://discord.gg/kMKqpaP'} target="_blank">
 									<svg

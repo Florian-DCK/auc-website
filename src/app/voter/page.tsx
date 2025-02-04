@@ -6,7 +6,7 @@ const voter = () => {
 		<div className="flex flex-col-reverse lg:flex-row justify-around lg:px-32 lg:gap-20">
 			<section className="lg:w-1/2 space-y-10 lg:space-y-auto">
 				<section className=" lg:border-l-4 rounded px-3 border-[#242B33]">
-					<h1 className="bowlby text-xl lg:text-2xl">
+					<h1 className="bowlby text-xl lg:text-4xl">
 						Soutenez-nous en votant !
 					</h1>
 					<p className="robotoCondensed text-pretty text-base lg:text-lg ">
@@ -15,7 +15,7 @@ const voter = () => {
 					</p>
 				</section>
 				<section className="lg:border-l-4 rounded px-3 border-[#242B33]">
-					<h1 className="bowlby text-xl lg:text-2xl">
+					<h1 className="bowlby text-xl lg:text-xl">
 						De plus, vous obtiendrez 1 choco !
 					</h1>
 					<p className="robotoCondensed text-base lg:text-lg">
@@ -33,7 +33,7 @@ const voter = () => {
 					</ul>
 				</section>
 				<section className="lg:border-l-4 rounded px-3 border-[#242B33]">
-					<h1 className="bowlby text-xl lg:text-2xl">Allez plus loin !</h1>
+					<h1 className="bowlby text-xl lg:text-4xl">Allez plus loin !</h1>
 					<p className="robotoCondensed text-base lg:text-lg">
 						Vous pouvez également nous soutenir en achetant un grade en jeu !
 					</p>

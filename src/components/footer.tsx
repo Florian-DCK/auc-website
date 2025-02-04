@@ -1,11 +1,9 @@
 export default function Footer() {
 	return (
-		<div className=" overflow-hidden absolute -bottom-3 -right-5 hidden lg:block">
+		<div className="relative overflow-hidden lg:block h-[11vw] bottom-0 mt-auto">
 			{/* fond du footer */}
 			<svg
-				className=" overflow-x-hidden w-auto"
-				width="952"
-				height="219"
+				className=" overflow-x-hidden zoom-in-0 absolute -bottom-5 -right-5 h-[13vw] w-[50vw] "
 				viewBox="0 0 952 219"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg">

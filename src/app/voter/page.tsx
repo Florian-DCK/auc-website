@@ -34,7 +34,7 @@ const voter = () => {
 						</li>
 					</ul>
 				</section>
-				<section className="lg:border-l-4 rounded px-3 border-[#242B33]">
+				<section className="lg:border-l-4 px-3 pb-7 border-[#242B33]">
 					<h1 className="bowlby text-xl lg:text-4xl">Allez plus loin !</h1>
 					<p className="robotoCondensed text-base lg:text-lg">
 						Vous pouvez également nous soutenir en achetant un grade en jeu !
@@ -62,7 +62,7 @@ const voter = () => {
 					</Link>
 				</section>
 			</section>
-			<section className="lg:w-1/2 lg:flex flex-col space-y-5 ">
+			<section className="lg:w-1/2 lg:flex flex-col space-y-5 px-3 mb-5 -mt-12 lg:mt-0 lg:mb-0">
 				<div>
 					<h2 className="bowlby text-xl lg:text-2xl">
 						Les sites sur lesquels voter :

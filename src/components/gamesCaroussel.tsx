@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 export default function GamesCaroussel() {
 	return (
-		<div className=" self-center w-1/2">
+		<div className=" self-center w-min lg:w-1/2">
 			<Carousel className="" opts={{ loop: true, align: 'center' }}>
 				<CarouselContent>
 					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">

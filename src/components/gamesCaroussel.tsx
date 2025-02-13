@@ -24,7 +24,7 @@ export default function GamesCaroussel() {
 				className=""
 				orientation={orientation}
 				opts={{ loop: true, align: 'center' }}>
-				<CarouselContent className="md:h-[300px]">
+				<CarouselContent className="md:h-[300px] lg:h-auto">
 					<CarouselItem className="lg:basis-1/2 md:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">

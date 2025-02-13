@@ -77,7 +77,7 @@ export default function Navbar() {
 					</defs>
 				</svg>
 				{/* Logo AUC */}
-				<Link href={'/'} className="z-10 hidden lg:block">
+				<Link href={'/'} className="z-10 hidden md:block">
 					<Image
 						width={120}
 						height={120}

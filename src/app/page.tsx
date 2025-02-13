@@ -85,16 +85,16 @@ export default function Home() {
 							</button>
 						</div>
 					</section>
-					<section className="lg:w-1/2 lg:hidden flex-col space-y-5 justify-center items-center flex">
+					<section className="lg:w-1/2 lg:hidden flex-col space-y-5 justify-center items-center flex md:flex-row md:space-x-20">
 						<iframe
-							className="w-[265px] h-[150px] lg:w-[531px] lg:h-[300px] rounded-lg lg:rounded-3xl"
+							className="w-[265px] h-[150px] md:w-[397.5px] md:h-[225px] lg:w-[531px] lg:h-[300px] rounded-lg lg:rounded-3xl"
 							src="https://www.youtube.com/embed/bk6_hS23DrU?si=Y5j3gw0Xj5DkbGlP&amp;controls=0&amp;rel=0&amp;showinfo=0"
 							title="AUC Trailer S10"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen
 							loading="lazy"></iframe>
-						<h2 className="bowlby text-xl">CERTAINS DE NOS JEUX :</h2>
+						<h2 className="bowlby text-xl md:hidden">CERTAINS DE NOS JEUX :</h2>
 						<GamesCaroussel />
 					</section>
 					<section className="lg:border-l-4 rounded px-3 border-[#242B33]">

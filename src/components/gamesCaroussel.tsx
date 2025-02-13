@@ -5,6 +5,7 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from '@/components/ui/carousel';
+import { useMediaQuery } from '@/hooks/use-media-query';
 
 import minecraft from '../../public/minecraft.jpg';
 import amongUs from '../../public/amongUs.jpg';
@@ -13,11 +14,18 @@ import paradox from '../../public/paradox.jpg';
 import Image from 'next/image';
 
 export default function GamesCaroussel() {
+	const isMedium = useMediaQuery('(min-width: 768px)');
+	const isLarge = useMediaQuery('(min-width: 1024px)');
+	const orientation = isMedium && !isLarge ? 'vertical' : 'horizontal';
+
 	return (
-		<div className=" self-center w-min lg:w-1/2">
-			<Carousel className="" opts={{ loop: true, align: 'center' }}>
-				<CarouselContent>
-					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
+		<div className=" self-center w-min md:w-1/5 lg:w-1/2">
+			<Carousel
+				className=""
+				orientation={orientation}
+				opts={{ loop: true, align: 'center' }}>
+				<CarouselContent className="md:h-[300px]">
+					<CarouselItem className="lg:basis-1/2 md:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Minecraft
@@ -29,7 +37,7 @@ export default function GamesCaroussel() {
 							/>
 						</div>
 					</CarouselItem>
-					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 md:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Among Us
@@ -41,7 +49,7 @@ export default function GamesCaroussel() {
 							/>
 						</div>
 					</CarouselItem>
-					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 md:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Lethal Company
@@ -53,7 +61,7 @@ export default function GamesCaroussel() {
 							/>
 						</div>
 					</CarouselItem>
-					<CarouselItem className="lg:basis-1/2 drop-shadow-lg">
+					<CarouselItem className="lg:basis-1/2 md:basis-1/2 drop-shadow-lg">
 						<div className="bg-primary flex flex-col rounded-lg">
 							<h3 className="staatliches text-secondary self-center">
 								Jeux Paradox
